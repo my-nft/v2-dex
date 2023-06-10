@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "SyneBold";
+  src: url("./assets/fonts/Syne-Bold.otf");
+}
+
+@font-face {
+  font-family: "SyneExtra";
+  src: url("./assets/fonts/Syne-Extra-BF642e31d32a227.otf");
+}
+
+@font-face {
+  font-family: "SyneItalic";
+  src: url("./assets/fonts/Syne-Italic-BF642e31d3c299e.otf");
+}
+
+@font-face {
+  font-family: "SyneMono";
+  src: url("./assets/fonts/Syne-Mono-BF642e31d33cc9a.otf");
+}
+
+@font-face {
+  font-family: "SyneRegular";
+  src: url("./assets/fonts/Syne-Regular-BF642e31d3934f5.otf");
+}
+
+@font-face {
+  font-family: "KanitBlack";
+  src: url("./assets/fonts/Kanit/Kanit-Black.ttf");
+}
+
+@font-face {
+  font-family: "KanitBold";
+  src: url("./assets/fonts/Kanit/Kanit-Bold.ttf");
+}
+
+@font-face {
+  font-family: "KanitExtraLight";
+  src: url("./assets/fonts/Kanit/Kanit-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "KanitLight";
+  src: url("./assets/fonts/Kanit/Kanit-Light.ttf");
+}
+
+@font-face {
+  font-family: "KanitMedium";
+  src: url("./assets/fonts/Kanit/Kanit-Medium.ttf");
+}
+
+@font-face {
+  font-family: "KanitSemiBold";
+  src: url("./assets/fonts/Kanit/Kanit-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "KanitThin";
+  src: url("./assets/fonts/Kanit/Kanit-Thin.ttf");
+}
+
+@font-face {
+  font-family: "KanitThinItalic";
+  src: url("./assets/fonts/Kanit/Kanit-ThinItalic.ttf");
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #0c131f;
+  position: relative;
+  overflow-x: hidden;
+}
+
+input::-webkit-outer-spin-buttonm,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* @media screen and (max-width: 1440px) {
+  body {
+    padding-left: 340px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  body {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+} */
+
+.apexcharts-yaxis-label,
+.apexcharts-xaxis-label {
+  font-family: "KanitExtraLight" !important;
+}

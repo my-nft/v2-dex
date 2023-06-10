@@ -1,0 +1,80 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  important: true,
+  mode: "jit",
+  content: ["./src/**/*.{js,jsx}"],
+  theme: {
+    extend: {
+      colors: {
+        pageBackground: "#000000",
+        accent: "#202b39",
+        accentHover: "#17233b",
+        inputs: "#131313",
+        text: "#dbdbdb",
+        wallet: "#00e300",
+        buttons: "#03141B",
+        buttonsHover: "#04212D",
+        container: "#19203d",
+        textAccent: "#CB8944",
+        buttonAccent: "#F1B06D",
+        buttonAccentHover: "#5d8aa8",
+        coin: "#0066a8",
+        growth: "#00e300",
+        shrink: "#ff0000",
+        border: "rgb(24, 38, 62)",
+        link: "rgba(255,255,255,1)",
+        linkHover: "#805324",
+        linkHoverBorder: "#fff",
+        icons: "#f1b06d",
+        newsbar: "#f1b06d",
+      },
+      screens: {
+        xs: "420px",
+        mxl: "1440px",
+        xxl: "1920px",
+      },
+      width: {
+        sidebar: "250px",
+      },
+      maxWidth: {
+        container: "1320px",
+        sidebar: "250px",
+      },
+      backgroundImage: {
+        gradientBlue: "linear-gradient(90deg, #f1b06d 0%, #C28341 100%)",
+        gradientNews: "linear-gradient(130deg, #f1b06d 0%, #C28341 61%)",
+        gradientContainer: "linear-gradient(180deg, #003c56 0%, #041B25 100%)",
+      },
+      fontFamily: {
+        syneBold: ["SyneBold", "sans-serif"],
+        syneExtra: ["SyneExtra", "sans-serif"],
+        syneItalic: ["SyneItalic", "sans-serif"],
+        syneMono: ["SyneMono", "sans-serif"],
+        syneRegular: ["SyneRegular", "sans-serif"],
+        kanitBlack: ["KanitBlack", "sans-serif"],
+        kanitBold: ["KanitBold", "sans-serif"],
+        kanitExtraLight: ["KanitExtraLight", "sans-serif"],
+        kanitLight: ["KanitLight", "sans-serif"],
+        kanitMedium: ["KanitMedium", "sans-serif"],
+        kanitThin: ["KanitThin", "sans-serif"],
+        kanitThinItalic: ["KanitThinItalic", "sans-serif"],
+      },
+      boxShadow: {
+        green: "0px 0px 14px 1px rgba(21, 255, 0, 1)",
+        box: "0px 0px 18px 18px rgba(174, 108, 40, 0.08)",
+      },
+      keyframes: {
+        slide: {
+          "0%": { transform: "translateX(100%)", opacity: 0 },
+          "1%": { transform: "translateX(100%)", opacity: 1 },
+          "99%": { transform: "translateX(-50%)", opacity: 1 },
+          "100%": { transform: "translateX(-50%)", opacity: 1 },
+        },
+      },
+      animation: {
+        slide: "slide 36s linear infinite",
+      },
+    },
+  },
+  plugins: [],
+};
