@@ -15,6 +15,8 @@ import ZklabV1FactoryAbi from "../web3/abi/ZklabV1Factory.json";
 import { mainnetChains } from "./chain";
 import { fetchBalance } from '@wagmi/core'
 
+console.log("process.env: ", process.env);
+
 
 export const routerAddressTestnet =
   process.env.REACT_APP_ROUTER_ADDRESS_TESTNET;
