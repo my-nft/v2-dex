@@ -55,7 +55,7 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             docker login ${{ env.REGISTRY }} -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }}
-            docker-compose -f ${{ secrets.DOCKER_COMPOSE_FILE }} pull 
-            docker-compose -f ${{ secrets.DOCKER_COMPOSE_FILE }} up -d frontend
+            docker-compose -f ${{ secrets.DOCKER_COMPOSE_FILE }} pull v2-dex
+            docker-compose -f ${{ secrets.DOCKER_COMPOSE_FILE }} up -d v2-dex
             docker logout
             docker image prune -a -f
