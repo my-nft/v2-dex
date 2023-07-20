@@ -77,7 +77,7 @@ export const sepoliaChain = {
     symbol: "ETH",
   },
   rpcUrls: {
-    default: { http: ["https://rpc2.sepolia.org"] },
+    default: { http: ["https://sepolia.infura.io/v3/92cc277b16b0407695b1664fc4736d17"] },
   },
   blockExplorers: {
     default: { name: "etherscan", url: "https://sepolia.etherscan.io/"},
